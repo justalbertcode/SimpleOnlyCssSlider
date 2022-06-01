@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+  width: 100%;
+}
+#slideshow-wrap {
+    display: block;
+    height: 500px;
+    width: 350px;
+    margin: 0 auto;
+    border: 5px rgba(155,155,155,1) solid;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
+    margin-top: 150px;
+    position: relative;
+}
+
+#slideshow-inner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+#slideshow-inner>ul {
+    list-style: none;
+    height: 100%;
+    width: 500%;
+    overflow: hidden;
+    position: relative;
+    left: 0px;
+}
+
+svg{
+  width: 300px;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccc;
+}
+
+#slideshow-inner>ul>li {
+    width: 20%;
+    height: 500px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* #slideshow-inner>ul>li>img {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    overflow: hidden;
+} */
+
+#slideshow-wrap input[type=radio] {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 100;
+    visibility: hidden; 
+}
+
+#slideshow-wrap label {
+ 
+  position: absolute;
+    left: 50%;
+    bottom: -45px;
+    z-index: 100;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+span{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border: 0.5px solid black;
+}
+
+
+.span-black{
+    display: flex;
+    background: black; 
+}
+.span-white{
+    display: flex;
+    background: white; 
+}
+.span-red{
+    display: flex;
+    background: red; 
+}
+.span-blue{
+    display: flex;
+    background: blue; 
+}
+
+
+
+
+#slideshow-wrap label[for=button-1] { margin-left: -50px }
+
+#slideshow-wrap label[for=button-2] { margin-left: -25px }
+
+#slideshow-wrap label[for=button-4] { margin-left: 25px }
+
+#slideshow-wrap label[for=button-5] { margin-left: 50px }
+
+/* #slideshow-wrap input[type=radio]#button-1:checked~#slideshow-inner>ul { left: 0 } */
+
+#slideshow-wrap input[type=radio]#button-2:checked~#slideshow-inner>ul { left: -100% }
+
+#slideshow-wrap input[type=radio]#button-3:checked~#slideshow-inner>ul { left: -200% }
+
+#slideshow-wrap input[type=radio]#button-4:checked~#slideshow-inner>ul { left: -300% }
+
+#slideshow-wrap input[type=radio]#button-5:checked~#slideshow-inner>ul { left: -400% }
+
+
+
+input[type=radio]
+#button-2:checked~input[type=radio],
+#button-3:checked~input[type=radio],
+#button-4:checked~input[type=radio],
+{
+    left: -55px;
+    display: block;
+    transform: scaleX(-1);
+}
+
+#slideshow-inner>ul>li:hover .description label { opacity: 1 }
+
+.description input[type=checkbox]:checked~label { opacity: 1 }
+
+.black{
+  fill: black;
+}
+.white{
+  fill: white;
+}
+.red {
+  fill: red;
+}
+.blue{
+  fill: blue;
+}
+
+
