@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+  background-color: #000;
+}
 img{
   width: 100%;
 }
@@ -36,6 +38,7 @@ img{
 
 svg{
   width: 300px;
+  
 }
 
 li{
@@ -51,6 +54,7 @@ li{
     float: left;
     overflow: hidden;
     position: relative;
+  
 }
 
 /* #slideshow-inner>ul>li>img {
@@ -67,6 +71,8 @@ li{
     bottom: 15px;
     z-index: 100;
     visibility: hidden; 
+  
+  
 }
 
 #slideshow-wrap label {
@@ -79,6 +85,7 @@ li{
     height: 12px;
     border-radius: 50%;
     cursor: pointer;
+  
 }
 
 span{
@@ -87,7 +94,7 @@ span{
     border-radius: 15px;
     margin-right: 20px;
     margin-left: 10px;
-    border: 0.5px solid black;
+    border: 0.5px solid white;
 }
 
 
